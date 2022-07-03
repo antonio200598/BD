@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 public class App 
 {
-    private static String DB_URL = "jdbc:mysql://localhost/escola";
+    private static String DB_URL = "jdbc:mysql://localhost/school";
     private static String DB_USER = "root";
     private static String DB_PASSWORD = "PQRnex379!!";
             
@@ -22,7 +22,7 @@ public class App
                 conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
    
                 stmt = conn.createStatement();
-                String sqlCommand = "INSERT INTO aluno (nome, matricula, email, telefone, nascimento, endereco, TurmaId) VALUES ('Jose', '12345678','jose@gmail.com', '4002-8922', '01/01/2001', 'rua 1', '1')";
+                String sqlCommand = "INSERT INTO students (name, email) VALUES ('mauricio', 'mauricio@gmail.com')";
                 stmt.executeUpdate(sqlCommand, Statement.RETURN_GENERATED_KEYS);
                 
                 ResultSet rs = null;
@@ -33,7 +33,7 @@ public class App
                 }
 
                 conn.close();	
-                System.out.println("Id: " + id);
+                System.out.println(" Id: " + id);
                 
         } catch (InstantiationException e) {
             // TODO Auto-generated catch block
