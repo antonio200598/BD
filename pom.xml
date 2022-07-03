@@ -20,11 +20,11 @@
 
   <dependencies>
 
-  </bui  <dependency>
-  </bui    <groupId>mysql</groupId>
-  </bui    <artifactId>mysql-connector-java</artifactId>
-  </bui    <version>8.0.29</version>
-  </bui  </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+     <version>8.0.29</version>
+    </dependency>
 
     <dependency>
       <groupId>junit</groupId>
